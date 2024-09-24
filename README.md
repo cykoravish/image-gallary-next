@@ -22,8 +22,8 @@ This project is an image gallery built using **Next.js** with **TypeScript**, in
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/cykoravish/image-gallary-next.git
+   cd image-gallary-next
 
 2. **Install dependencies**:
    npm install
