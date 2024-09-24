@@ -1,15 +1,15 @@
-import { v2 as cloudinary } from 'cloudinary';
+import { v2 as cloudinary } from "cloudinary";
 
 // (async function() {
 
-    // Configuration
-    cloudinary.config({ 
-        cloud_name: 'dwuohu2i5', 
-        api_key: '391318976836965', 
-        api_secret: 'IlZu0FC-Gkp8pTYv6OR2Lx5ZVJ0' // Click 'View API Keys' above to copy your API secret
-    });
-    export default cloudinary;
-    
+// Configuration
+cloudinary.config({
+  cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY,
+  api_secret: process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET, // Click 'View API Keys' above to copy your API secret
+});
+export default cloudinary;
+
 //     // Upload an image
 //      const uploadResult = await cloudinary.uploader
 //        .upload(
@@ -20,17 +20,17 @@ import { v2 as cloudinary } from 'cloudinary';
 //        .catch((error) => {
 //            console.log(error);
 //        });
-    
+
 //     console.log(uploadResult);
-    
+
 //     // Optimize delivery by resizing and applying auto-format and auto-quality
 //     const optimizeUrl = cloudinary.url('shoes', {
 //         fetch_format: 'auto',
 //         quality: 'auto'
 //     });
-    
+
 //     console.log(optimizeUrl);
-    
+
 //     // Transform the image: auto-crop to square aspect_ratio
 //     const autoCropUrl = cloudinary.url('shoes', {
 //         crop: 'auto',
@@ -38,6 +38,6 @@ import { v2 as cloudinary } from 'cloudinary';
 //         width: 500,
 //         height: 500,
 //     });
-    
-//     console.log(autoCropUrl);    
+
+//     console.log(autoCropUrl);
 // })();
